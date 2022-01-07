@@ -1,0 +1,445 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Montserrat:wght@400;600&family=Poppins:wght@500&family=Tinos&display=swap');
+body {
+    margin: 0;
+}
+
+/* start nav_background */
+
+.nav_background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    padding: 15px 10%;
+    padding-top: 20px;
+    background: rgba(0,0,0,0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.list li {
+    margin: 0 50px;
+}
+
+.list li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.list li a button {
+    background: #F05670;
+    border: none;
+    width: 186.78px;
+    height: 62.26px;
+    font-size: 16px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    font-weight: 700;
+}
+
+.list li a span {
+    display: block;
+    display: flex;
+    align-items: center;
+}
+
+.list li a span span {
+    margin-left: 10px;
+    color: #1E959B;
+}
+
+@media screen and (max-width:1400px){
+    .nav_background {
+        width: 90%;
+        padding: 15px 5%;
+    }
+}
+@media screen and (max-width:1202px){
+    .nav_background {
+        width: 90%;
+        padding: 15px 5%;
+    }
+    .list li {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width:968px){
+    .list li span span {
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .list {
+        display: none;
+    }
+    .nav_background {
+        justify-content: center;
+    }
+}
+
+/* end nav background */
+/* bottom_background start */
+
+.bottom_background {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.list_text {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 50%;
+    z-index: 10;
+}
+
+.list_text li {
+    margin: 10px;
+}
+
+.list_text li h1 {
+    color: #1e959b;
+    font-size: 52px;
+    margin-bottom: 5px;
+}
+
+.list_text li p {
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.list_text li button {
+    background: #F05670;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    width: 232px;
+    height: 70px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.bottom_background_image {
+    width: 50%;
+}
+
+.bottom_background_image img {
+    width: 100%;
+}
+
+@media screen and (max-width:968px) {
+    .bottom_background_image {
+        display: none;
+    }
+
+    header {
+        background: url('../image/Group.png') center / cover no-repeat;
+        width: 100%;
+        position: absolute;
+    }
+
+    .list_text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .list_text li button {
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .list_text li h1 {
+        font-size: 34px;
+    }
+    .list_text li button {
+        margin: 0 10px;
+    }
+}
+
+/* end bottom background */
+/* start bottom logo background */
+
+.bottom_logo_background {
+    background: #1E959B;
+    width: 80%;
+    padding: 0 10%;
+}
+
+.icon_logo_background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    padding: 55px 0;
+}
+
+@media screen and (max-width:1268px) {
+    .icon_logo_background li:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .icon_logo_background li:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .icon_logo_background li:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .icon_logo_background li:nth-child(2){
+        display: none;
+    }
+    .bottom_logo_background {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* end bottom logo background */
+
+
+
+
+/* FOOTER */
+
+/* FOOTER_BANNER */
+.footer_banner{
+    width: 90%;
+    padding: 10px 5%;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footer_btn{
+    width: 330px;
+    height: 100px;
+    border-radius: 20px;
+    background: #F05670;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0px 5px 10px rgba(30, 149, 155, 0.5);
+    transition: 0.6s;
+    cursor: pointer;
+}
+.footer_btn:hover{
+    border: 2px solid #F05670;
+    background: white;
+    color: #F05670;
+    box-shadow: 0px 5px 10px rgba(155, 10, 30, 0.5);
+}
+/* FOOTER_BANNER_КОНЕЦ */
+
+/* FOOTER_NAV */
+
+ul{
+    list-style: none;
+    margin: 0%;
+    padding: 0%;
+}
+.footer_nav{
+    width: 90%;
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_list{
+    margin: 0 30px;  
+}
+.footer_list li{
+    margin: 20px 0;
+}
+.footer_list li a{
+    color: #1E959B;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.footer_list li a:hover{
+   color: #044e52;
+}
+.footer_contacts{
+    margin: 0 20px;
+}
+.footer_contacts li{
+    margin: 20px 0;
+}
+.footer_contacts li a{
+    color: #1E959B;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.footer_contacts li a:hover{
+    color: #044e52;
+}
+.footer_contacts li a i{
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+}
+.footer_contacts li a i b{
+    font-size: 16px;
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.footer_social{
+    display: flex;
+    align-items: center;
+}
+.footer_social li{
+    margin:  0 20px;
+    font-size: 35px;
+    color: #1E959B;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.footer_social li:hover{
+    color: #044e52;
+}
+.footer_social p{
+    width: 290px;
+    height: 136px;
+    font-weight: 400;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3C3C3C;
+}
+.copyright{
+    margin-top: 50px;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #3C3C3C80;
+}
+.copyright p{
+    margin: 10px;
+    margin-bottom: 0;
+}
+.copyright p i{
+    color: #F05670;
+}
+/* FOOTER_NAV_КОНЕЦ */
+
+/* FOOTER_ADAPTIVE */
+@media screen and (max-width:1356px) {
+    .footer_nav{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width:768px) {
+    .footer_banner{
+        flex-wrap: wrap;
+    }
+    .footer_btn{
+        margin-top: 50px;
+    }
+}
+@media screen and (max-width:425px){
+    .footer_banner{
+        justify-content: center;
+    }
+    .footer_logo img{
+        width: 350px;
+    }
+    .footer_list{
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    .footer_list li{
+        margin: 0 35px;
+    }
+    .footer_contacts{
+        margin-left: 70px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .footer_contacts li a{
+        font-size: 24px;
+    }
+    .footer_contacts li a i{
+        margin-left: 15px;
+    }
+    .footer_social{
+        width: 90%;
+        padding: 0 5%;
+        justify-content: space-between;
+    }
+    .footer_social li i{
+        font-size: 40px;
+    }
+    .footer_social p{
+        display: none;
+    }
+}
+@media screen and (max-width:375px){
+    .footer_contacts{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:320px){
+    .footer_banner img{
+        width: 250px;
+        margin-left: 50px;
+    }
+    .footer_btn{
+        width: 250px;
+    }
+    .footer_nav{
+        justify-content: center;
+    }
+    .footer_logo img{
+        width: 20й  0px;
+        margin-left: 0;
+    }
+    .footer_contacts li a i{
+        margin-left: 0;
+    }
+    .footer_contacts li a{
+        font-size: 20px;
+        
+    }
+}
+/* FOOTER_ADAPTIVE_КОНЕЦ */
+
+/* FOOTER-КОНЕЦ */
