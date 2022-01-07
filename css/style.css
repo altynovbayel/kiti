@@ -55,6 +55,36 @@ body {
     color: #1E959B;
 }
 
+@media screen and (max-width:1400px){
+    .nav_background {
+        width: 90%;
+        padding: 15px 5%;
+    }
+}
+@media screen and (max-width:1202px){
+    .nav_background {
+        width: 90%;
+        padding: 15px 5%;
+    }
+    .list li {
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width:968px){
+    .list li span span {
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .list {
+        display: none;
+    }
+    .nav_background {
+        justify-content: center;
+    }
+}
+
 /* end nav background */
 /* bottom_background start */
 
@@ -73,6 +103,7 @@ body {
     padding-left: 0;
     margin: 0;
     width: 50%;
+    z-index: 10;
 }
 
 .list_text li {
@@ -111,6 +142,38 @@ body {
     width: 100%;
 }
 
+@media screen and (max-width:968px) {
+    .bottom_background_image {
+        display: none;
+    }
+
+    header {
+        background: url('../image/Group.png') center / cover no-repeat;
+        width: 100%;
+        position: absolute;
+    }
+
+    .list_text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .list_text li button {
+        margin-top: 100px;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .list_text li h1 {
+        font-size: 34px;
+    }
+    .list_text li button {
+        margin: 0 10px;
+    }
+}
+
 /* end bottom background */
 /* start bottom logo background */
 
@@ -129,3 +192,33 @@ body {
     margin: 0;
     padding: 55px 0;
 }
+
+@media screen and (max-width:1268px) {
+    .icon_logo_background li:nth-child(5){
+        display: none;
+    }
+}
+
+@media screen and (max-width:968px) {
+    .icon_logo_background li:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width:786px) {
+    .icon_logo_background li:nth-child(3){
+        display: none;
+    }
+}
+
+@media screen and (max-width:568px) {
+    .icon_logo_background li:nth-child(2){
+        display: none;
+    }
+    .bottom_logo_background {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* end bottom logo background */
