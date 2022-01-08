@@ -115,7 +115,7 @@ li {
 .list_text li h1 {
     color: #1e959b;
     font-size: 52px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;background: none;
 }
 
 .list_text li p {
